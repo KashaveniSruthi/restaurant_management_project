@@ -24,3 +24,10 @@ class ItemView(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+class MenuView(APIView):
+    def get(self,request):
+        menu_items=[
+            {"name":"Veg biryabi","price":200},
+            {"name":"Chicken Biryani","price":300}
+        ]
+        return Response(menu_items,status=status.HTTP_200_OK)
