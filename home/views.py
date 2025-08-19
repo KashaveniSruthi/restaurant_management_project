@@ -17,4 +17,4 @@ def index(request):
     context={
         "phone"=getattar(settings,"RESTAURANT_PHONE","N/A")
     }
-    return render(request,'home/index.html',context)
+    return render(request,'home/home.html',context)
