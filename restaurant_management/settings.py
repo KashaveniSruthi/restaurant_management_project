@@ -116,6 +116,7 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+RESTAURANT_PHONE=+91 9123456789
 
 
 # Static files (CSS, JavaScript, Images)
