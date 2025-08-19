@@ -1,45 +1,25 @@
-body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fafafa;
-    color:#333;
-    line-height: 1.6;
-    padding: 0 20px;
+{%load static%}
+<!DOCTYPE html>
+<html lag="en">
+<head>
+    <meta charset="UTF=8">
+    <title>Restaurant Management</title>
+    <link rel="stylesheet" href="{%static 'home/css/style.css'%}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Restaurant</h1>
+    </header>
+    <main>
+        <p>Explore our menu,place your orders</p>
+        <a href="/products/menu/" class="btn">View Menu</a>
+        <hr>
+        <p><strong>Call Us:</strong>{{phone}}</p>
+    </main>
+    <footer>
+        <p>&Copy; 2025 Restaurant Management</p>
+    </footer>
+</body>
+</html>
 
-}
-header{
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-main{
-    margin: 40px auto;
-    max-width: 800px;
-    text-align: center;
-}
-main p{
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-.btn{
-    display: inline-block;
-    background: #27ae60;
-    color:white;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-.btn:hover{
-    background: #219150;
-}
-footer{
-    background-color: #2c3e50;
-    color:#add;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-    font-size: 0.9rem;
 
-}
